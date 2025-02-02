@@ -11,9 +11,10 @@ function Footer() {
                     </a>
                 </p>
             </p>
-            <p>Autor: <br /> Alysson <br />
+            <p>Autor: <br /> Alysson Araujo <br />
                 <p>Contato: <br />
-                    <a href="" target="blank">
+                    <a href="https://www.linkedin.com/in/alysson-araujo/
+" target="blank">
                         <img src="https://icons.iconarchive.com/icons/graphics-vibe/simple-rounded-social/48/linkedin-icon.png" alt="Linkedin" />
                     </a>
                 </p>
