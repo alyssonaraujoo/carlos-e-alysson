@@ -14,6 +14,7 @@ function AdicionarGastos() {
 
   //atualiza o estado da lista de gastos
   const [gastos, setGastos] = useState([]);
+  const [erro, setErro] = useState(null)
 
   //atualiza o estado do formulario
   const attFormulario = (e) => {
@@ -27,13 +28,21 @@ function AdicionarGastos() {
   //adiciona os dados do formulario a lista de gastos
   const adcDadosFormALista = (e) => {
     e.preventDefault();
-    setGastos([...gastos, formData]);
-    setFormData({
+
+    if (!formData.descricao || !formData.categoria || !formData.valor || !formData.data) {
+      setErro("Todos os campos são obrigatórios.");
+      return;
+    }
+
+    const novoGasto = { ...formData };
+    setGastos([...gastos, novoGasto]);
+    setFormData({    
       descricao: '',
       categoria: '',
       valor: '',
       data: ''
     });
+    setErro(null);
   };
 
   return (
@@ -41,6 +50,7 @@ function AdicionarGastos() {
     <div className="AdicionarGastos">
       <h1>Adicionar Gastos</h1>
       <form  onSubmit={adcDadosFormALista}>
+        {erro && <p className="erro">{erro}</p>}
 
         <label htmlFor='descricao'>Descrição</label>
         <input type="text" id='descricao' name='descricao' value={formData.descricao} onChange={attFormulario} placeholder="Descrição" />
