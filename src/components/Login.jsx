@@ -1,9 +1,10 @@
 import './Login.css'	
+
 function Login() {
   return (
-    <div className="login">
+    <div>
       <h1>Login</h1>
-      <form>
+      <form className="login-form">
         <input type="text" placeholder="Usuário" />
         <input type="password" placeholder="Senha" />
         <button type="submit">Entrar</button>
