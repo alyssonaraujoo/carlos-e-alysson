@@ -15,7 +15,7 @@ function Rotas() {
         <Nav />
         <Routes>
           <Route path="/Login" element={<Login />} />
-          <Route path="/AdicionarGastos" element={<AdicionarGastos />} /> 
+          <Route path="/AdicionarGastos" element={<AdicionarGastos AdicionarGastos ={AdicionarGastos} />} /> 
           <Route path="/Gastos" element={<Gastos />} />
           <Route path="/Grafico" element={<Grafico />} /> 
         </Routes>
