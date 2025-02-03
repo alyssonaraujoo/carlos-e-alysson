@@ -45,35 +45,36 @@ function AdicionarGastos({gastos, setGastos}) {
   };
 
   return (
+  <>
+  <div className='centralizado'>
+    <h1>Adicionar Gastos</h1>
+    <form className='AdicionarGastos'  onSubmit={adcDadosFormALista}>
+      {erro && <p className="erro">{erro}</p>}
 
-    <div className="AdicionarGastos">
-      <h1>Adicionar Gastos</h1>
-      <form  onSubmit={adcDadosFormALista}>
-        {erro && <p className="erro">{erro}</p>}
+      <label htmlFor='descricao'>Descricao</label>
+      <input type="text" id='descricao' name='descricao' value={formData.descricao} onChange={attFormulario} placeholder="Descrição" />
 
-        <label htmlFor='descricao'>Descrição</label>
-        <input type="text" id='descricao' name='descricao' value={formData.descricao} onChange={attFormulario} placeholder="Descrição" />
+      <label htmlFor='categoria'>Categoria</label>
+      <select id='categoria' name='categoria' value={formData.categoria} onChange={attFormulario} required>
+        <option value=''>Selecione</option>
+        <option value='alimentacao'>Alimentação</option>
+        <option value='contas'>Contas de Casa</option>
+        <option value='transporte'>Transporte</option>
+        <option value='lazer'>Lazer</option>
+        <option value='entreterimento'>Entretenimento</option>
+        <option value='outros'>Outros</option>
+      </select>
 
-        <label htmlFor='categoria'>Categoria</label>
-        <select id='categoria' name='categoria' value={formData.categoria} onChange={attFormulario} required>
-          <option value=''>Selecione</option>
-          <option value='alimentacao'>Alimentação</option>
-          <option value='contas'>Contas de Casa</option>
-          <option value='transporte'>Transporte</option>
-          <option value='lazer'>Lazer</option>
-          <option value='entreterimento'>Entreterimento</option>
-          <option value='outros'>Outros</option>
-        </select>
+      <label htmlFor="valor">Valor:</label>
+      <input type="text" id="valor" name="valor" value={formData.valor} onChange={attFormulario} placeholder="Valor" />
 
-        <label htmlFor="valor">Valor:</label>
-        <input type="text" id="valor" name="valor" value={formData.valor} onChange={attFormulario} placeholder="Valor" />
+      <label htmlFor="data">Data:</label>
+      <input type="date" id="data" name="data" value={formData.data} onChange={attFormulario} required />
 
-        <label htmlFor="data">Data:</label>
-        <input type="date" id="data" name="data" value={formData.data} onChange={attFormulario} required />
-
-        <button type="submit">Adicionar</button>
-      </form>
+      <button type="submit">Adicionar</button>
+    </form>
     </div>
+  </>  
   )
 }
 
