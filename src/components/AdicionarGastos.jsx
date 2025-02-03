@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './AdicionarGastos.css';
 
 
-function AdicionarGastos() {
+function AdicionarGastos({gastos, setGastos}) {
 
   //atualiza o estado do formulario
   const [formData, setFormData] = useState({
@@ -13,7 +13,6 @@ function AdicionarGastos() {
   });
 
   //atualiza o estado da lista de gastos
-  const [gastos, setGastos] = useState([]);
   const [erro, setErro] = useState(null)
 
   //atualiza o estado do formulario
