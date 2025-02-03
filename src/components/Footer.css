@@ -12,12 +12,12 @@ footer {
     gap: 60px;
 }
 
-.autores img{
+.autores img {
     width: 60px;
     transition: transform 0.5s ease;
 }
 
-.autores img:hover{
+.autores img:hover {
     transform: scale(1.1);
 }
 
@@ -30,7 +30,7 @@ footer {
     padding: 20px;
 }
 
-.links-rodape a {
+.links-rodape a, #devs {
     color: #025c7d;
     font-weight: bold;
 }
