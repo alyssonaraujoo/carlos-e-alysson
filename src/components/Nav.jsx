@@ -1,9 +1,11 @@
 import './Nav.css';
+import logo from '../assets/imgs/logo.png';
 
 
 function Nav() {
   return (
     <nav>
+      <img src={logo} alt="Logo" className="logo" />
       <ul>
         <li>
             <a href='Login' >Login</a>

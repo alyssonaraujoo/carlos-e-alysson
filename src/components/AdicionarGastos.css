@@ -13,3 +13,12 @@
     border-radius: 5px;
 }
 
+.AdicionarGastos input, select {
+    text-align: center;
+    margin-bottom: 10px; 
+    padding: 5px;
+}
+
+.AdicionarGastos button {
+    margin-top: 10px; 
+}

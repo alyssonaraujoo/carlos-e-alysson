@@ -23,7 +23,6 @@ footer {
 
   
 .links-rodape {
-    color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,11 +30,12 @@ footer {
 }
 
 .links-rodape a, #devs {
-    color: #025c7d;
+    color: #881ac3;
     font-weight: bold;
+    margin: 0px
 }
 
 .links-rodape a:hover {
-    color: #7d5202;
+    color: #C0C0C0;
     font-weight: bold;
 }

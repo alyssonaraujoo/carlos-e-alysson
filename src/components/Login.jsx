@@ -2,7 +2,7 @@ import './Login.css'
 
 function Login() {
   return (
-    <div>
+    <div className='centralizado'>
       <h1>Login</h1>
       <form className="login-form">
         <input type="text" placeholder="Usuário" />

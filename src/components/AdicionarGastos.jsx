@@ -52,7 +52,7 @@ function AdicionarGastos() {
     <form className='AdicionarGastos'  onSubmit={adcDadosFormALista}>
       {erro && <p className="erro">{erro}</p>}
 
-      <label htmlFor='descricao'>Descricao</label>
+      <label htmlFor='descricao'>Descrição</label>
       <input type="text" id='descricao' name='descricao' value={formData.descricao} onChange={attFormulario} placeholder="Descrição" />
 
       <label htmlFor='categoria'>Categoria</label>
@@ -66,10 +66,10 @@ function AdicionarGastos() {
         <option value='outros'>Outros</option>
       </select>
 
-      <label htmlFor="valor">Valor:</label>
-      <input type="text" id="valor" name="valor" value={formData.valor} onChange={attFormulario} placeholder="Valor" />
+      <label htmlFor="valor">Valor</label>
+      <input type="text" id="valor" name="valor" value={formData.valor} onChange={attFormulario} placeholder="R$" />
 
-      <label htmlFor="data">Data:</label>
+      <label htmlFor="data">Data</label>
       <input type="date" id="data" name="data" value={formData.data} onChange={attFormulario} required />
 
       <button type="submit">Adicionar</button>

@@ -26,6 +26,9 @@ function Footer() {
                 <a href="#termos-de-uso">Termos de Uso</a>
                 <a href="#ajuda">Ajuda</a>
             </div>
+            <div className="direitos-reservados">
+                <p>Todos os direitos reservados - Domado®️ 2025</p>
+            </div>
         </footer>
     )
 }
