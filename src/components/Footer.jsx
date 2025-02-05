@@ -7,14 +7,14 @@ function Footer() {
             <p id="devs">Desenvolvedores</p>
             <div className="autores">
                 <p><br /> Carlos Roberto <br />
-                    <p>Contato <br />
+                    <p><br />
                         <a href="https://www.linkedin.com/in/carlos-roberto-alves-bezerra-luna-125288224/" target="blank">
                             <img src="https://icons.iconarchive.com/icons/graphics-vibe/simple-rounded-social/48/linkedin-icon.png" alt="Linkedin" />
                         </a>
                     </p>
                 </p>
                 <p><br /> Alysson Araujo <br />
-                    <p>Contato <br />
+                    <p><br />
                         <a href="https://www.linkedin.com/in/alysson-araujo/" target="blank">
                             <img src="https://icons.iconarchive.com/icons/graphics-vibe/simple-rounded-social/48/linkedin-icon.png" alt="Linkedin" />
                         </a>
