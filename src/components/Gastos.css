@@ -1,0 +1,63 @@
+.Gastos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 80%; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 3px solid #870dc9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+}
+
+.Gastos h1 {
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+.Gastos ul {
+    list-style: none; 
+    padding: 0;
+    width: 100%;
+}
+
+.Gastos li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px;
+    border-bottom: 1px solid #eee; 
+    transition: background-color 0.3s ease;
+}
+
+/* .Gastos li:last-child {
+    border-bottom: none; 
+}
+
+.Gastos li:hover {
+    background-color: #f5f5f5; 
+    cursor: pointer; 
+}
+
+.Gastos li span { 
+    margin-right: 10px; 
+}
+
+.Gastos li span:first-child {
+    font-weight: bold; 
+}
+
+.Gastos li span:nth-child(2) {
+    color: #888; 
+}
+
+.Gastos li span:nth-child(3) {
+    color: #007bff; 
+    font-weight: bold;
+}
+
+.Gastos li span:last-child {
+    color: #888; 
+    font-size: 0.8em;
+} */

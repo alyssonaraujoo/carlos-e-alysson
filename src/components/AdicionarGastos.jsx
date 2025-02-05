@@ -47,7 +47,6 @@ function AdicionarGastos({gastos, setGastos}) {
   return (
   <>
   <div className='centralizado'>
-    <h1>Adicionar Gastos</h1>
     <form className='AdicionarGastos'  onSubmit={adcDadosFormALista}>
       {erro && <p className="erro">{erro}</p>}
 

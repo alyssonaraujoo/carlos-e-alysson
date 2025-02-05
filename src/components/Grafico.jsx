@@ -22,7 +22,6 @@ function Grafico() {
   );
   return (
     <>
-      <h1>Gráfico</h1>
       <div>{renderBarChart}</div>
     </>
 

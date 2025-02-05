@@ -1,0 +1,8 @@
+div h1 p{
+    color: #C0C0C0;
+    font-size: x-large;
+}
+
+div h1:hover {
+    color: #881ac3;
+}

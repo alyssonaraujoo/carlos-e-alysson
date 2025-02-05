@@ -2,6 +2,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
     padding: 20px;
 }
   
@@ -10,6 +11,7 @@ footer {
     justify-content: space-around;
     margin-bottom: 20px;
     gap: 60px;
+    color: #C0C0C0;
 }
 
 .autores img {
@@ -38,4 +40,10 @@ footer {
 .links-rodape a:hover {
     color: #C0C0C0;
     font-weight: bold;
+}
+
+.direitos-reservados {
+    color: #C0C0C0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }

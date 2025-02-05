@@ -25,6 +25,10 @@ nav {
   nav a:hover {
     color: #870dc9;
   }
+
+  nav a.active {
+    color: #870dc9;
+  }
   
   .logo {
     border-radius: 100%;

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Home from './components/Home'
 import AdicionarGastos from './components/AdicionarGastos'
 import Footer from './components/Footer'
 import Gastos from './components/Gastos'
@@ -17,6 +18,7 @@ function Rotas() {
       <BrowserRouter>
         <Nav />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/AdicionarGastos" element={<AdicionarGastos setGastos={setGastos} gastos={gastos} />} /> 
           <Route path="/Gastos" element={<Gastos gastos={gastos} />} />
