@@ -11,7 +11,7 @@ function Nav() {
             <a href='Login' >Login</a>
         </li>        
         <li>
-            <a href='AdicionarGastos' >Adicionar Gastos</a>
+            <a href='aplicativo' >Aplicativo</a>
         </li>        
         <li>
             <a href='Gastos' >Gastos</a>

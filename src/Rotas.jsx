@@ -13,6 +13,10 @@ function Rotas() {
 
   const [gastos, setGastos] = useState([]);
 
+  const adicionarGasto = (novoGasto) => {
+    setGastos([...gastos, { ...novoGasto, id: Date.now() }]);
+  };
+
   return (
     <>
       <BrowserRouter>
@@ -20,9 +24,16 @@ function Rotas() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/AdicionarGastos" element={<AdicionarGastos setGastos={setGastos} gastos={gastos} />} /> 
+          <Route path="/aplicativo" element={
+            <>
+              <AdicionarGastos adicionarGasto={adicionarGasto} />
+              <Gastos gastos={gastos} />
+              <Grafico gastos={gastos} />
+            </>
+          }
+          />
           <Route path="/Gastos" element={<Gastos gastos={gastos} />} />
-          <Route path="/Grafico" element={<Grafico gastos={gastos} />} /> 
+          <Route path="/Grafico" element={<Grafico gastos={gastos} />} />
         </Routes>
         <Footer />
       </BrowserRouter>
